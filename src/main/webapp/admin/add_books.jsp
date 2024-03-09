@@ -1,10 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
+    <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Admin: Add Books</title>
+<title>Admin:Add Books</title>
+
+<c:if test="${not empty succMsg }">
+<p class="text-center text-success">${succMsg }</p>
+<c:remove var="succMsg" scope="session" />
+</c:if>
+
+
+<c:if test="${not empty failedMsg }">
+<p class="text-center text-danger">${failedMsg }</p>
+<c:remove var="failedMsg" scope="session" />
+</c:if>
+
+
+
+
+
 <%@include file="allCss.jsp" %>
 </head>
 <body style="background-color: #f0f2f2;">
@@ -17,7 +36,7 @@
 <h4 class="text-center">AddBooks</h4>
 
 
-<form action="../AdminAddBookServlet" method="post"
+<form action="../add_books" method="post"
 enctype="multipart/form-data">
 
   <div class="mb-3">
@@ -40,7 +59,7 @@ enctype="multipart/form-data">
   
    <div class="mb-3">
     <label for="inputState" class="form-label">Book Categories</label>
-   <select id="inputState" name="btype" class="form-control">
+   <select id="inputState" name="categories" class="form-control">
   <option selected>--select--</option>
     <option value="New">New Book</option>
   </select>
@@ -48,7 +67,7 @@ enctype="multipart/form-data">
   
     <div class="mb-3">
     <label for="inputState" class="form-label">Book Status</label>
-    <select id="inputState" name="bstatus" class="form-control">
+    <select id="inputState" name="status" class="form-control">
   <option selected>--select--</option>
     <option value="Active">Active</option>
      <option value="Inactive">Inactive</option>
