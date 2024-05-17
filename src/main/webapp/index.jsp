@@ -11,7 +11,7 @@
 <%@include file="all_componenet/allCss.jsp" %>
 <style type="text/css">
 .back-img{
-background:url("img/bookc.png");
+background:url("img/lib_book1.jpg");
 
 height: 70vh;
 width:100%
@@ -28,7 +28,7 @@ background-color: #fcf7f7;
 <body style="background-color: #f7f7f7;">
      <%@include file = "all_componenet/navbar.jsp" %>
      <div class="container-fluid back-img">
-     <h2 class="text-center text-danger">Ebook Management System</h2>
+     <h2 class="text-center text-white">Ebook Management System</h2>
      </div>
      
     

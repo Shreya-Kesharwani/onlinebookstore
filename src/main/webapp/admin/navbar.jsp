@@ -12,27 +12,22 @@
 			<i class="fa-solid fa-book"></i>Ebooks</h3>
 		</div>
 
-		<div class="col-md-6">
-			<form class="d-flex" role="search">
-				<input class="form-control me-2" type="search" placeholder="Search"
-					aria-label="Search">
-				<button class="btn btn-primary" type="submit">Search</button>
-			</form>
-		</div>
+
 
 		<div class="col-md-3">
 		
 		
-		<c:if test="${not empty userobj }">
-		<a href="login.jsp" class="btn btn-success"><i
-		 class="fa-solid fa-right-to-bracket"></i> ${ userobj.name}</a>
-		 <a data-toggle="modal" data-target ="#exampleModalCenter"
+	 	<c:if test="${not empty userobj }">
+		<a class="btn btn-success text-white">
+		<i class="fa-solid fa-user"></i> ${ userobj.name}</a>
+		<!--   <a data-toggle="modal" data-target ="#exampleModalCenter"
 				class="btn btn-primary text-white">
 				<form action="../logout" method="get">
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i>Logout</button>
-    </form>	</a>
+    </form>	</a>-->
 		 
-			
+		<a data-toggle="modal" data-target ="#exampleModalCenter"
+				class="btn btn-primary text-white"><i class="fa-solid fa-right-to-bracket"></i>Logout</a>	
 			
 		
 		</c:if>
@@ -71,10 +66,10 @@ aria-label="Close">
 </button>
 </div>
 <div class="modal-body">
-<div class="text-center">
+ <div class="text-center">
 <h4>Do You want logout</h4>
 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-<a href="../logout" type="button" class="btn btn-primary">Logout</a>
+<a href="../logout" type="button" class="btn btn-primary text-white">Logout</a>
 </div>
 
 </div>
