@@ -40,17 +40,17 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item active"><a class="nav-link active"
-					aria-current="page" href="#">Home</a></li>
-				<li class="nav-item active"><a class="nav-link active" href="#"><i class="fa-solid fa-book-open"></i> Recent
+					aria-current="page" href="index.jsp">Home</a></li>
+				<li class="nav-item active"><a class="nav-link active" href="all_recent_book.jsp"><i class="fa-solid fa-book-open"></i> Recent
 						Book</a></li>
 
 
-				<li class="nav-item active"><a class="nav-link active" href="#"><i class="fa-solid fa-book-open"></i> New
+				<li class="nav-item active"><a class="nav-link active" href="all_new_book.jsp"><i class="fa-solid fa-book-open"></i> New
 						Book</a></li>
 
 
 				<li class="nav-item active"><a class="nav-link active"
-					aria-disabled="true"><i class="fa-solid fa-book-open"></i> Old Book</a></li>
+					aria-disabled="true" href="all_old_book.jsp"><i class="fa-solid fa-book-open"></i> Old Book</a></li>
 			</ul>
 			
 			
